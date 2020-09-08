@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Design/css/bootstrap.css" rel="stylesheet">    
+    <script type="text/javascript" lang="ja">
+        window.history.forward(1);
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">MATT</a>
+            </div>
+            <div class="">
+                <ul>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Prospects<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li>@Html.ActionLink("List Prospects", "Prospects", "Prospect")</li>
+                            <li>@Html.ActionLink("Summary Report", "Sumamry", "Prospect")</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Majors<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li>@Html.ActionLink("List Majors", "MajorList", "Major")</li>
+                            <li>@Html.ActionLink("List API", "APIList", "Major")</li>
+                            <li>@Html.ActionLink("New API", "BuildAPI", "Major")</li>
+                            <li>@Html.ActionLink("Org. Structure", "Organization", "Major")</li>
+                            <li>@Html.ActionLink("Course Coordinator", "UnivCourse", "Major")</li>
+                            <li>@Html.ActionLink("API Coordinator", "CoreCoordList", "Major")</li>
+                            <li>@Html.ActionLink("Course Titles", "CourseTitle", "Major")</li>
+                            <li>@Html.ActionLink("Degrees", "Sumamry", "Major")</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="../Inst/list.aspx">Institutions</a>
+                        <ul>
+                            <li>@Html.ActionLink("List Institutions", "InstitutionsList", "Institutions")</li>
+                            <li>@Html.ActionLink("New Institution", "NewInstitution", "Institutions")</li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">Reports</a>
+                        <ul>
+                            <li>@Html.ActionLink("Articulation Agreement 2019-2021", "ArticulationAgreement", "Reports")</li>
+                            <li>@Html.ActionLink("AA by Institution", "AAByInstitution", "Reports")</li>
+                            <li>@Html.ActionLink("Appendices", "Appendices", "Reports")</li>
+                            <li>@Html.ActionLink("Admin Usage", "AdminUsage", "Reports")</li>
+                            <li>@Html.ActionLink("Manually Generate Articulation PDF", "ManualPDFRefresh", "Reports")</li>
+                             
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="">Security</a>
+                        <ul> 
+                            <li>@Html.ActionLink("Add User", "AddUser", "Security")</li>
+                            <li>@Html.ActionLink("List Users", "UsersList", "Security")</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
