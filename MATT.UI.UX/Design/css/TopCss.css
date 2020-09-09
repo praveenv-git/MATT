@@ -1,0 +1,102 @@
+﻿
+
+#navMenu  
+{
+    margin:0;
+    padding:0;
+  /* background:#528655; */
+  background-image: url('../images/bgMenu1.jpg');
+   
+   }
+
+
+#navMenu ul {
+    Margin:0;
+    padding:0;
+    line-height:30px;
+}
+
+#navMenu li 
+{
+    margin:0;
+    padding:0;
+    list-style:none;
+    float:left;
+    position:relative;
+    width:125px;
+    background: #528655; 
+}
+
+#navMenu ul li a
+{
+    text-align: left;
+    font-family: 'Arial Black';
+    text-decoration: none;
+    height: 30px;
+    width: 270px;
+    display: block;
+    color: #FFF;
+    border: 1px solid #528658;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 12px;
+    text-indent: 20px;
+    background: #528655;
+}
+
+#navMenu ul ul
+{
+    position:absolute;
+    visibility:hidden;
+    top:32px;
+    
+            }
+
+ #navMenu ul ul li a
+{
+    position: relative;
+    text-align: left;
+    font-family: 'Arial Black';
+    text-decoration: none;
+    height: 30px;
+    width: 270px;
+    display: block;
+    color: #FFF;
+    border: 1px solid #528658;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 12px;
+    text-indent: 20px;
+    background: #528655;
+    
+            }
+                       
+#navMenu ul li:hover ul
+{
+    visibility:visible;
+    
+}
+
+/*********************************/
+#navMenu li:hover
+{
+    background: #f90;
+   /* background: #09F;  #FFCC00 */
+}
+    
+#navMenu ul li:hover ul li a:hover
+{
+    background-color: #A53128; /* #FF9900; */
+    color: #fff;
+}
+
+#navMenu a:hover
+{
+    background-color: #A53128;
+    color: #fff;  /* #FF3300; */
+}
+
+.clearFloat 
+{
+    clear:both;
+    margin:0;
+    padding:0;
+}

@@ -143,6 +143,13 @@
     <Content Include="Design\Common\FLRelease2.js" />
     <Content Include="Design\Common\ieupdate.js" />
     <Content Include="Design\Common\jsUpdateProgress.js" />
+    <Content Include="Design\css\AdmCss.css" />
+    <Content Include="Design\css\Main.css" />
+    <Content Include="Design\css\MainLv1.css" />
+    <Content Include="Design\css\MainNew.css" />
+    <Content Include="Design\css\style.css" />
+    <Content Include="Design\css\TopCss.css" />
+    <Content Include="Design\css\VerticalMenu.css" />
     <Content Include="Design\JS\bootstrap.bundle.js" />
     <Content Include="Design\JS\bootstrap.bundle.min.js" />
     <Content Include="Design\JS\bootstrap.js" />
@@ -161,6 +168,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Design\css\Fonts\Kalam-Regular.ttf" />
+    <Content Include="Design\css\Fonts\museo-slab-300.eot" />
+    <Content Include="Design\css\Fonts\museo-slab-300.ttf" />
+    <Content Include="Design\css\Fonts\museo-slab-300.woff" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

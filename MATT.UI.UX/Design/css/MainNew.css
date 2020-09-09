@@ -1,0 +1,30 @@
+﻿.topHeader {
+    background: #FFF;
+}
+
+.topHeader-Social {
+    padding-top: 30px;
+    text-align: center
+}
+
+    .topHeader-Social > img {
+        padding: 0 10px;
+    }
+
+.topHeaderDiv {
+    padding-top: 15px;
+}
+
+    .topHeaderDiv > img {
+        text-align: right;
+    }
+
+.logoArea {
+    background: url(../images/pattern-orange.jpg) repeat-x;
+    overflow: auto;
+    text-align: center
+}
+
+.logoArea {
+    padding: 100px 0;
+}
