@@ -48,5 +48,10 @@ namespace MATT.UI.UX.Controllers
             return View();
         }
 
+        public ActionResult DegreesList()
+        {
+            return View();
+        }
+
     }
 }

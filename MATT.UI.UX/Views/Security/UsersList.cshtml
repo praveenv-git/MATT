@@ -1,7 +1,14 @@
-﻿
-@{
-    ViewBag.Title = "UsersList";
+﻿@{
+    ViewBag.Title = "Users List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <section class="content">
+        <div class="container">
 
-<h2>UsersList</h2>
+        </div>
+    </section>
+}
 

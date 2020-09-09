@@ -1,7 +1,14 @@
-﻿
-@{
-    ViewBag.Title = "AddUser";
+﻿@{
+    ViewBag.Title = "Add User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>AddUser</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <section class="content">
+        <div class="container">
+            start coding
+        </div>
+    </section>
+}
 

@@ -1,17 +1,13 @@
 ﻿@{
-    Layout = null;
+    ViewBag.Title = "Prospects";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <section class="content">
+        <div class="container">
+        </div>
+    </section>
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-    
-    </div>
-</body>
-</html>
